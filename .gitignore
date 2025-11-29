@@ -7,41 +7,40 @@ yarn-error.log*
 pnpm-debug.log*
 lerna-debug.log*
 
-# Dependency directories / lockfiles
-node_modules
-pnpm-lock.yaml
-package-lock.json
-yarn.lock
+# Dependencies
+node_modules/
 
-# Build output
-dist
-dist-ssr
-.vite
-.turbo
-coverage
-*.local
-*.tsbuildinfo
-
-# Environment files
+# Environment
 .env
-.env.*
-!.env.example
+.env.local
+.env.*.local
+
+# Build / output
+dist/
+build/
+out/
+
+# Coverage and caches
+coverage/
+.cache/
+.parcel-cache/
+.next/
+.turborepo/
+.vite/
+
+# OS files
+.DS_Store
+Thumbs.db
 
 # Editor directories and files
 .vscode/*
 !.vscode/extensions.json
 .idea
-.DS_Store
 *.suo
 *.ntvs*
 *.njsproj
 *.sln
 *.sw?
-Thumbs.db
 
-# Tool caches
-.eslintcache
-.parcel-cache
-.npm
-.pnpm-store
-
+# Misc
+/.history

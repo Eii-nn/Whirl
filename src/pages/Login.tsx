@@ -2,6 +2,7 @@ import { Link, useNavigate } from 'react-router-dom'
 import LeftArt from '../assets/Login/model.svg'
 import GoogleIcon from '../assets/icons/Google.svg'
 
+
 interface LoginProps{
     onNavigate?: (view: 'landing' | 'signup') => void
 }
@@ -12,29 +13,7 @@ const Login = ({ onNavigate }: LoginProps) => {
   return (
     <main className='min-h-screen bg-gray-50'>
       <div className='grid grid-cols-1 lg:grid-cols-2 min-h-screen'>
-        {/* Left Section - Blue Background with 3D Character */}
-        <section className='relative hidden lg:flex items-center justify-center bg-gradient-to-br from-blue-500 via-blue-600 to-blue-700 overflow-hidden'>
-          {/* Wavy background pattern */}
-          <div className='absolute inset-0'>
-            <svg className='w-full h-full' viewBox='0 0 1200 800' preserveAspectRatio='none' opacity='0.3'>
-              <path d='M0,400 Q300,350 600,400 T1200,400 L1200,800 L0,800 Z' fill='#60A5FA' />
-              <path d='M0,500 Q300,450 600,500 T1200,500 L1200,800 L0,800 Z' fill='#3B82F6' />
-              <path d='M0,600 Q300,550 600,600 T1200,600 L1200,800 L0,800 Z' fill='#2563EB' />
-            </svg>
-            <svg className='w-full h-full' viewBox='0 0 1200 800' preserveAspectRatio='none' opacity='0.2'>
-              <path d='M0,300 Q400,250 800,300 T1200,300 L1200,800 L0,800 Z' fill='#93C5FD' />
-              <path d='M0,450 Q400,400 800,450 T1200,450 L1200,800 L0,800 Z' fill='#60A5FA' />
-            </svg>
-          </div>
-          {/* 3D Character Model */}
-          <div className='relative z-10 flex items-center justify-center w-full h-full px-8'>
-            <img 
-              src={LeftArt} 
-              alt="3D Character" 
-              className='h-[85%] max-h-[700px] w-auto object-contain'
-            />
-          </div>
-        </section>
+        <CharacterScene characterSrc={LeftArt} />
 
         {/* Right Section - Login Form */}
         <section className='relative flex flex-col bg-gray-50'>

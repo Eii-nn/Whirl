@@ -349,17 +349,6 @@ const Signup = ({ onNavigate }: SignupProps) => {
               className="w-full h-full object-cover"
             />
           </div>
-          <div className="absolute inset-0 z-[1]">
-            <svg className="w-full h-full" viewBox="0 0 1200 800" preserveAspectRatio="none" opacity="0.3">
-              <path d="M0,400 Q300,350 600,400 T1200,400 L1200,800 L0,800 Z" fill="#60A5FA" />
-              <path d="M0,500 Q300,450 600,500 T1200,500 L1200,800 L0,800 Z" fill="#3B82F6" />
-              <path d="M0,600 Q300,550 600,600 T1200,600 L1200,800 L0,800 Z" fill="#2563EB" />
-            </svg>
-            <svg className="w-full h-full" viewBox="0 0 1200 800" preserveAspectRatio="none" opacity="0.2">
-              <path d="M0,300 Q400,250 800,300 T1200,300 L1200,800 L0,800 Z" fill="#93C5FD" />
-              <path d="M0,450 Q400,400 800,450 T1200,450 L1200,800 L0,800 Z" fill="#60A5FA" />
-            </svg>
-          </div>
           <div className="relative z-10 flex items-center justify-center w-full h-full px-8">
             <img
               src={getCharacterModel()}

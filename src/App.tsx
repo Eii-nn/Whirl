@@ -1,11 +1,12 @@
 import { Routes, Route } from 'react-router-dom'
-import Landing from './Landing/Landing'
-import Signup from './Signup/Signup'
-import Login from './Login/Login'
+import Landing from './pages/Landing'
+import Signup from './pages/Signup'
+import Login from './pages/Login'
+import Chat from './pages/Chat'
 
 function App() {
   return (
-    <Signup/>
+    <Chat />
   )
 }
 
