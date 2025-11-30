@@ -1,5 +1,6 @@
 import { Link, useNavigate } from 'react-router-dom'
 import LeftArt from '../assets/Login/model.svg'
+import Background from '../assets/Login/Background.svg'
 import GoogleIcon from '../assets/icons/Google.svg'
 
 
@@ -13,7 +14,23 @@ const Login = ({ onNavigate }: LoginProps) => {
   return (
     <main className='min-h-screen bg-gray-50'>
       <div className='grid grid-cols-1 lg:grid-cols-2 min-h-screen'>
-        <CharacterScene characterSrc={LeftArt} />
+        {/* Left Section - Character Scene */}
+        <section className="relative hidden lg:flex items-center justify-center bg-gradient-to-br from-blue-500 via-blue-600 to-blue-700 overflow-hidden">
+          <div className="absolute inset-0 z-0">
+            <img
+              src={Background}
+              alt="Background"
+              className="w-full h-full object-cover"
+            />
+          </div>
+          <div className="relative z-10 flex items-center justify-center w-full h-full px-8">
+            <img
+              src={LeftArt}
+              alt="3D Character"
+              className="h-[85%] max-h-[700px] w-auto object-contain"
+            />
+          </div>
+        </section>
 
         {/* Right Section - Login Form */}
         <section className='relative flex flex-col bg-gray-50'>
